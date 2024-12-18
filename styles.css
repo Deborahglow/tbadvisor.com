@@ -1,0 +1,422 @@
+/* styles.css */
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Colors */
+/* .bg-light-purple {
+  background-color: #3e1c5c;
+} */
+.text-orange {
+  color: #ff6b00;
+}
+.btn-orange {
+  background-color: #ff6b00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.btn-orange:hover {
+  background-color: #e05a00;
+  color: #fff;
+}
+
+
+
+/* Navbar */
+/* Ensure the navbar stays fixed at the top */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top of the viewport */
+  left: 0; /* Align it to the left of the viewport */
+  width: 100%; /* Make sure it spans the entire width */
+  background-color: #3e1c5c; /* Your navbar background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow for effect */
+  z-index: 1030; /* Keep it on top of other elements */
+  padding: 1% 10%; /* Add padding for spacing */
+  transition: top 0.3s; /* Smooth transition for when the navbar is toggled */
+}
+
+
+/* .navbar {
+  background-color: #3e1c5c;
+  padding: 0.8rem;
+} */
+
+.navbar .brand {
+  color: #ff6b00;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #ff6b00;
+}
+
+.navbar .navbar-nav .contact-btn {
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+  border-color: #ff6b00;
+}
+
+.navbar .navbar-toggler-icon {
+  background-color: #ff6b00; /* Orange color for the toggle icon */
+}
+
+/* Ensure navbar is collapsed on mobile */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background-color: #3e1c5c; 
+  }
+  .navbar-nav {
+    text-align: center; /* Center the links on mobile */
+  }
+  .navbar-nav .nav-item {
+    margin-top: 10px;
+  }
+  .navbar-nav .contact-btn {
+    margin-top: 20px;
+  }
+}
+
+
+/* Banner with Gradient Overlay */
+.banner {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6), /* Orange color with 60% opacity */
+      rgba(0, 0, 0, 0.6) /* Light purple color with 60% opacity */
+    ),
+    url('AI photos/p10.jpg') no-repeat center center/cover; /* Background image */
+  height: 90vh;
+  display: flex;
+  flex-direction: column; /* Allow vertical stacking */
+  justify-content: center; /* Align content vertically to the center */
+  align-items: center; /* Align content to the left (start) */
+  padding: 0 20px; 
+  text-align: right; /* Ensure text is aligned to the left */
+}
+.banner h2 {
+  margin-top: 10%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+/* About Section Styles */
+#about {
+  /* background-color: #f9f9f9; */
+  padding: 60px 0;
+  margin-top: 10%;
+}
+
+#about .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3e1c5c; /* Orange for the title */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+#about .heading-line {
+  width: 15%; /* Line width */
+  height: 6px; /* Line thickness */
+  background-color: #ff6b00; /* Orange color for the line */
+  margin: 10px 0; /* Spacing above and below the line */
+}
+
+#about .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Padding around the image */
+  /* background-color: #ff6b00; Orange background (border effect) */
+  border-radius: 15px; /* Rounded corners around the image's border */
+}
+
+#about .image-container img {
+  border-radius: 10px; /* Rounded corners for the image itself */
+  max-width: 60%; /* Ensures the image is responsive */
+  height: auto;
+  border-top: 20px solid #ff6b00; /* Orange border around the image */
+  border-right: 20px solid #ff6b00;
+  max-height: 0%;
+
+}
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+.btn-orange {
+  background-color: #ff6b00; /* Orange color */
+  color: #fff; /* White text */
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  text-decoration: none; /* Remove underline from the link */
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00; /* Darker shade of orange on hover */
+}
+
+
+
+/* Services Section Styles */
+#services {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  margin-top: 10%;
+  margin-bottom: 70px;
+}
+
+#services .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3e1c5c; /* Orange for the title */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#services .heading-line {
+  width: 50px;
+  height: 3px;
+  background-color: #ff6b00;
+  margin: 20px 0;
+}
+
+.card {
+  border-radius: 15px; /* Rounded corners for the cards */
+  overflow: hidden; /* Prevents images from overflowing */
+}
+
+.card-img-top {
+  width: 100%; /* Ensures images take full width of the card */
+  height: 200px; /* Set fixed height for the images */
+  
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.27rem;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  color: #555;
+}
+/* Services Section Button Styles */
+.btn-orange {
+  background-color: #ff6b00; /* Orange background color */
+  color: #fff; /* White text */
+  padding: 10px 30px; /* Button padding */
+  font-size: 1.1rem;
+  border-radius: 50px; /* Rounded edges */
+  text-decoration: none; /* Remove underline */
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+}
+
+.text-center{
+  text-align: center; /* Ensures the button stays perfectly centered */
+}
+
+
+/* Testimonial Section Styling */
+#testimonials {
+  background-color: #f8f9fa; /* Light background */
+  margin-top: 10%;
+}
+
+.carousel-item img {
+  border: 4px solid #3e1c5c; /* Orange border */
+
+}
+
+.carousel-item p {
+  font-style: italic; /* Italicized testimonial text */
+  font-size: 1.1rem;
+  margin-top: 15px;
+  line-height: 1.6; /* Improve readability */
+}
+
+.carousel-item h5 {
+  margin-top: 10px;
+}
+
+.carousel-item small {
+  display: block;
+  color: #6c757d; /* Secondary text color */
+}
+
+.heading-line {
+  width: 100px;
+  height: 3px;
+  background-color: #ff6b00; /* Orange line */
+  margin: 0 auto 20px;
+}
+
+.text-orange {
+  color: #ff6b00;
+}
+
+
+#contact {
+  background-color: #3e1c5c; /* Light purple background */
+  color: white; /* Text color for contrast */
+  margin-top: 10%;
+  margin-bottom: 0px;
+}
+
+.container1 {
+  background-color: #3e1c5c;
+  color: white;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: #ff6b00; /* Accent color */
+}
+
+.contact-info h5 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.contact-info ul li {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+  transform: scale(1.1); /* Slightly enlarge icon on hover */
+  color: #ff6b00; /* Hover color matches brand accent color */
+}
+
+.social-media i {
+  color: white; /* Default color of icons */
+}
+
+.social-media i:hover {
+  color: #ff6b00; /* Change color on hover */
+}
+
+/* Newsletter Section */
+.newsletter {
+  margin-top: 40px;
+  text-align: center; /* Center the entire section */
+}
+
+.newsletter h5 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter .input-group {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative; /* Ensure button can be positioned within the input */
+}
+
+.newsletter .form-control {
+  border-radius: 25px 25px; /* Fully rounded corners */
+  padding: 10px 20px;
+  font-size: 1rem;
+  padding-right: 150px; /* Add space for the button inside */
+  margin-bottom: 20px;
+}
+
+.newsletter .btn-orange {
+  position: absolute;
+  top: 0%;
+  right: 1px; /* Space from the right edge of the input field */
+  transform: translateY(-50%); /* Center vertically */
+  padding: 5px 15px;
+  font-size: 1rem;
+  border-radius: 20px; /* Rounded button */
+  border: none;
+}
+.newsletter .form-text1 {
+  margin-top: 30%;
+  color: white;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #3e1c5c;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 5%;
+}
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner h2 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
